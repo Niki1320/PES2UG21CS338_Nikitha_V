@@ -24,6 +24,7 @@ pipeline{
               stage('Deploy'){
                 steps{
                     echo 'deployment successfull'
+                    sh 'mvn deploy'
                 }
               }
         }
